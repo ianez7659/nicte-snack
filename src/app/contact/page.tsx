@@ -41,31 +41,6 @@ export default function ContactPage() {
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="p-6 md:p-10 bg-white"
           >
-            {/* Locations */}
-            <h2 className="text-2xl font-semibold tracking-widest text-gray-900">
-              LOCATION
-            </h2>
-            <div className="mt-4 space-y-3 text-gray-700">
-              <p>
-                <span className="font-semibold text-gray-500">●</span> Location
-                01
-                <br />
-                <span className="pl-5">Location 1 address goes here</span>
-              </p>
-              <p>
-                <span className="font-semibold text-gray-500">●</span> Location
-                02
-                <br />
-                <span className="pl-5">Location 2 address goes here</span>
-              </p>
-              <p>
-                <span className="font-semibold text-gray-500">●</span> Location
-                03
-                <br />
-                <span className="pl-5">Location 3 address goes here</span>
-              </p>
-            </div>
-
             {/* Divider */}
             <div className="my-8 h-px bg-gray-200" />
 
