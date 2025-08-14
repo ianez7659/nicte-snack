@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import AboutTabs, { TabKey, TABS } from "@/components/about/AboutTabs";
+import AboutTabs, { TabKey } from "@/components/about/AboutTabs";
 import IntroPanel from "@/components/about/IntroPanel";
 import ProductPanel from "@/components/about/ProductPanel";
 import FounderPanel from "@/components/about/FounderPanel";

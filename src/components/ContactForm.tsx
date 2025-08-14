@@ -53,9 +53,11 @@ export default function ContactForm() {
 
       // reset state after 6 seconds
       setTimeout(() => setState("idle"), 6000);
-    } catch (err: any) {
+    } catch (err: unknown) {
       setState("error");
-      setError(err?.message || "Something went wrong.");
+      const message =
+        err instanceof Error ? err.message : "Something went wrong.";
+      setError(message);
     }
   }
 
