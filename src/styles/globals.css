@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Jost", "sans-serif";
+  @apply font-sans bg-white text-gray-900;
+}
+
+/* Colorize only the Products slider (using your external pagination class) */
+.products-pagination .swiper-pagination-bullet {
+  background: rgb(21 128 61); /* green-700 */
+  opacity: 0.35;
+}
+.products-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Nav arrows inside the Swiper root */
+.products-swiper .swiper-button-prev,
+.products-swiper .swiper-button-next {
+  color: rgb(21 128 61); /* green-700 */
+}
