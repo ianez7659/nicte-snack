@@ -26,7 +26,7 @@ export default function ContactTeaser({
   ],
   ctaHref = "/contact",
   ctaLabel = "Contact Us",
-  imageSrc = "/images/spoons-circle-light.svg",
+  imageSrc = "/images/Spoons-circle-light.svg",
   imageAlt = "Contact NICTE",
   bandClassName = "w-full bg-neutral-50",
   containerClassName = "max-w-8xl mx-auto px-4 py-16",
