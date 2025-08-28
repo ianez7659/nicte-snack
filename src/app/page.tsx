@@ -14,35 +14,29 @@ import ContactSection from "@/components/ContactSection";
 const PRODUCT_SLIDES = [
   {
     href: "/product#flavours",
-    img: "/images/hat.webp", // TODO: replace
+    img: "/images/nice-mango.webp",
     alt: "Flavours",
     title: "Flavours",
     subtitle: "Cacao, Vanilla, Mix",
   },
   {
     href: "/product#flavours",
-    img: "/images/flavors-options-light.svg", // TODO: replace
+    img: "/images/nicte-choco.webp",
     alt: "Flavours Options",
     title: "Flavours",
     subtitle: "Explore all options",
   },
   {
     href: "/product#shapes-price",
-    img: "/images/flyer-light.svg", // TODO: replace
+    img: "/images/nicte-matcha.webp",
     alt: "Shapes",
     title: "Shapes & Price",
     subtitle: "Classic, Heart, Bar",
   },
+
   {
     href: "/product#shapes-price",
-    img: "/images/hearts.webp", // TODO: replace
-    alt: "Shapes & Price",
-    title: "Shapes & Price",
-    subtitle: "Tiered pricing available",
-  },
-  {
-    href: "/product#shapes-price",
-    img: "/images/background.jpg", // TODO: replace
+    img: "/images/flowers.webp",
     alt: "Gift & Events",
     title: "Gift & Events",
     subtitle: "Bulk & custom orders",
@@ -65,20 +59,27 @@ const FAQ_ITEMS: FaqItem[] = [
     ),
   },
   {
-    question: "Do you offer bulk or event orders?",
+    question: "What are the health benefits of amaranth?",
     answer: (
       <>
-        Yes—bulk quantities and custom shapes for events are available. Get in
-        touch for quotes and lead times.
+        Amaranth is a nutrient-rich pseudo-cereal packed with high-quality
+        protein, essential minerals, and antioxidants. It is naturally
+        gluten-free and supports overall health, digestion, and bone strength.
+        <Link href="/about" className="ml-1 underline underline-offset-4">
+          Read more →
+        </Link>
       </>
     ),
   },
   {
-    question: "Where do you ship?",
+    question: "Are there any upcoming promotion events?",
     answer: (
       <>
-        Currently within Canada; international shipping may be possible on
-        request.
+        We are currently preparing a promotion event. Please stay tuned for
+        future announcements.
+        <Link href="/faq" className="ml-1 underline underline-offset-4">
+          View FAQ →
+        </Link>
       </>
     ),
   },
@@ -89,7 +90,7 @@ export default function Home() {
     <section className="md:pt-10 flex flex-col items-center justify-center">
       {/* Hero Section */}
       <Hero
-        title="Eat Healthy, Stay Healthy"
+        title="Healthy, Crunchy, Delicious."
         subtitle="Five Superfood Seeds in One Bite!"
         webmSrc="/videos/nicte-land.webm"
         mp4Src="/videos/nicte-vid.mp4"

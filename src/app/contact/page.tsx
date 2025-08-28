@@ -30,7 +30,7 @@ export default function ContactPage() {
           >
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/amaranth.jpg)" }} // 기존 Left 이미지 느낌
+              style={{ backgroundImage: "url(/images/hearts.webp)" }} 
             />
           </motion.div>
 

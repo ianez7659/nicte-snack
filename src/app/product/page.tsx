@@ -5,29 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-type TabKey = "flavours" | "shapePrice";
+type TabKey = "flavours" | "price";
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: "flavours", label: "Flavours" },
-  { key: "shapePrice", label: "Shapes & Price" },
-];
-
-const SHAPES = [
-  {
-    title: "Bites",
-    desc: "Pocket-friendly, on-the-go energy.",
-    image: "/images/hearts.webp",
-  },
-  {
-    title: "Bars",
-    desc: "Lunchbox classic with bigger portion.",
-    image: "/images/flowers.webp",
-  },
-  {
-    title: "Personalized",
-    desc: "Custom shapes/sizes for events and gifts.",
-    image: "/images/hat.webp",
-  },
+  { key: "price", label: "Price" },
 ];
 
 export default function ProductPage() {
@@ -38,7 +20,7 @@ export default function ProductPage() {
       {/* Hero */}
       <div className="w-full bg-gradient-to-b from-white via-green-50 to-white py-10">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-green-800">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-[#5E7053]">
             Our Products
           </h1>
           <p className="mt-3 text-gray-600">
@@ -46,7 +28,7 @@ export default function ProductPage() {
           </p>
           <Link
             href="/ingredients"
-            className="mt-6 inline-block rounded-lg border border-green-700 bg-green-200 text-black hover:bg-green-700 hover:text-white px-6 py-3 font-semibold transition"
+            className="mt-6 inline-block rounded-lg border border-[#5E7053] bg-green-200 text-green-700 hover:bg-[#5E7053] hover:text-white px-6 py-3 font-semibold transition"
           >
             View Ingredients
           </Link>
@@ -131,7 +113,7 @@ export default function ProductPage() {
                         give, adding that extra sweetness and detail to your
                         healthy seeds bar.We use high quality dried mango that
                         ensures the sweet taste, softness, and consistency that
-                        your mouth deserves. It’s high in vitamins A, C,
+                        your mouth deserves. It's high in vitamins A, C,
                         antioxidants and fiber that support your immune system.
                       </p>
                     </section>
@@ -144,7 +126,7 @@ export default function ProductPage() {
                         One of the most relevant Japanese foods among Buddhist
                         monks and samurai warriors because of its calming yet
                         energizing properties, ideal for your morning diet. Let
-                        the incredible matcha’s benefits and flavor drown while
+                        the incredible matcha's benefits and flavor drown while
                         eating your healthy amaranth snack.
                       </p>
                     </section>
@@ -152,12 +134,12 @@ export default function ProductPage() {
 
                   {/* Right: image placeholder */}
                   <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm flex items-center justify-center">
-                    <div className="w-full aspect-[2/1] rounded-xl overflow-hidden border border-gray-200">
+                    <div className="w-full aspect-[4/5] rounded-xl overflow-hidden border border-gray-200">
                       <Image
-                        src="/images/hat.webp"
+                        src="/images/nicte-packages.webp"
                         alt="Product image"
                         width={800}
-                        height={400}
+                        height={1000}
                         className="object-cover w-full h-full"
                       />
                     </div>
@@ -166,51 +148,18 @@ export default function ProductPage() {
               </motion.div>
             )}
 
-            {tab === "shapePrice" && (
+            {tab === "price" && (
               <motion.div
-                key="shapePrice"
+                key="price"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="rounded-b-lg border border-gray-200 border-t-0 p-6 md:p-8 space-y-10"
+                className="rounded-b-lg border border-gray-200 border-t-0 p-6 md:p-8"
               >
-                {/* Shapes  */}
-                <section>
-                  <h2 className="text-2xl font-bold text-gray-900">Shapes</h2>
-                  <p className="text-gray-600 text-sm mt-1">
-                    Pick the format that fits your routine.
-                  </p>
-                  <div className="mt-4 grid md:grid-cols-3 gap-6">
-                    {SHAPES.map((shape) => (
-                      <div
-                        key={shape.title}
-                        className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
-                      >
-                        <div className="w-full aspect-video rounded-lg overflow-hidden border border-gray-200">
-                          <Image
-                            src={shape.image}
-                            alt={`${shape.title} preview`}
-                            width={800}
-                            height={450}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-
-                        <h3 className="mt-4 text-lg font-bold text-gray-900">
-                          {shape.title}
-                        </h3>
-                        <p className="mt-1 text-gray-600 text-sm">
-                          {shape.desc}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
                 {/* Price table */}
-                <section className="mt-10">
-                  <h2 className="text-2xl font-bold text-gray-900 ">Price</h2>
+                <section>
+                  <h2 className="text-2xl font-bold text-gray-900">Price</h2>
                   <p className="text-gray-600 text-sm mt-1">
                     Unit price by quantity
                   </p>
@@ -240,7 +189,7 @@ export default function ProductPage() {
                           }`}
                         >
                           <span className="font-medium">{qty}</span>
-                          <span className="font-semibold text-green-700 tabular-nums">
+                          <span className="font-semibold text-[#5E7053] tabular-nums">
                             {price}
                           </span>
                         </div>
@@ -252,7 +201,7 @@ export default function ProductPage() {
                     Would you like to know more?{" "}
                     <Link
                       href="/faq"
-                      className="text-green-700 font-semibold hover:underline"
+                      className="text-[#762B3B] font-semibold hover:underline"
                     >
                       Read the FAQ →
                     </Link>

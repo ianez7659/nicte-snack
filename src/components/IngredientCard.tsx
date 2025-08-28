@@ -44,7 +44,7 @@ export default function IngredientCard({
 
         {/* Bottom: text and arrow */}
         <div className="flex items-center justify-between px-5 py-2 cursor-pointer">
-          <h3 className="text-xl md:text-3xl md:font-semibold font-semibold text-green-800">
+          <h3 className="text-xl md:text-3xl md:font-semibold font-semibold text-[#5E7053]">
             {item.title}
           </h3>
           <span
@@ -53,7 +53,7 @@ export default function IngredientCard({
             }`}
             aria-hidden
           >
-            <ChevronDown size={30} className="text-green-800" />
+            <ChevronDown size={30} className="text-[#5E7053]" />
           </span>
         </div>
       </button>

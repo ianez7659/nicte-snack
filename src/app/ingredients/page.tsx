@@ -128,7 +128,7 @@ export default function IngredientsPage() {
       {/* Hero */}
       <div className="w-full bg-gradient-to-b from-white via-green-50 to-white py-12">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-6xl font-extrabold text-green-800">
+          <h1 className="text-3xl md:text-6xl font-extrabold text-[#5E7053]">
             Ingredients
           </h1>
           <p className="mt-3 text-gray-600">
@@ -136,7 +136,7 @@ export default function IngredientsPage() {
           </p>
           <Link
             href="/product"
-            className="inline-block mt-6 rounded-lg border border-green-700 text-green-800 hover:bg-green-50 px-6 py-2 font-semibold"
+            className="inline-block mt-6 rounded-lg border border-[#5E7053] text-[#5E7053] hover:bg-green-50 px-6 py-2 font-semibold"
           >
             Back to Products
           </Link>

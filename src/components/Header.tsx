@@ -23,15 +23,15 @@ export default function Header() {
         <div className="group flex items-center gap-3 cursor-pointer">
           <Link
             href="/"
-            className="group flex items-center gap-3 cursor-pointer"
+            className="group flex items-center gap-2 cursor-pointer"
           >
-            <h1 className="text-3xl font-bold text-green-700 transition-all duration-300 group-hover:text-pink-800 group-hover:scale-105 group-hover:tracking-wide">
+            <h1 className="text-3xl font-bold text-[#597e53] transition-all duration-300 group-hover:text-pink-800 group-hover:scale-105 group-hover:tracking-wide">
               NICTE
             </h1>
             <img
               src="/images/Logo.jpg" // public/images/Logo.jpg
               alt="NICTE Logo"
-              className="w-10 h-10 object-contain transition-transform duration-300 group-hover:rotate-[30deg]"
+              className="w-9 h-9 object-contain transition-transform duration-300 group-hover:rotate-[30deg]"
             />
           </Link>
         </div>

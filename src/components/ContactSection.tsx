@@ -54,7 +54,7 @@ export default function ContactTeaser({
 
           {/* Copy */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-green-700">
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#597e53]">
               {title}
             </h3>
             <p className="mt-3 text-base md:text-lg text-gray-700">
@@ -77,7 +77,7 @@ export default function ContactTeaser({
                 <Link
                   href={ctaHref}
                   aria-label="Go to Contact page"
-                  className="inline-flex items-center justify-center rounded-full bg-green-700 px-6 py-3 text-white font-semibold hover:bg-green-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
+                  className="inline-flex items-center justify-center rounded-full bg-[#597e53] px-6 py-3 text-white font-semibold hover:bg-green-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
                 >
                   {ctaLabel}
                 </Link>

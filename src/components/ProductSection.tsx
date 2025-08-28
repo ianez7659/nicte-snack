@@ -39,7 +39,7 @@ export default function ProductSection({
 }: ProductSectionProps) {
   return (
     <section id={id} className={containerClassName}>
-      <h2 className="text-center text-3xl md:text-4xl text-green-700 font-bold py-6 tracking-tight">
+      <h2 className="text-center text-3xl md:text-4xl text-[#597e53] font-bold py-6 tracking-tight">
         {title}
       </h2>
 

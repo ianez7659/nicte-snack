@@ -53,7 +53,7 @@ export default function Footer() {
           </h3>
           <div className="mt-4 flex items-center gap-3">
             <a
-              href="#"
+              href="https://www.instagram.com/nictesnacksca/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -80,37 +80,22 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
+              href="mailto:nictesnacks@gmail.com"
+              aria-label="Email"
               className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
-              title="X"
+              title="Email"
             >
-              {/* X icon */}
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
-                <path d="M18.9 3H21l-6.57 7.5L22 21h-6.98l-4.47-5.39L4.6 21H2.5l7.14-8.16L2 3h7l4.03 4.86L18.9 3Zm-2.45 16h2.02L8.64 5H6.6l9.84 14Z" />
+              {/* Email icon */}
+              <svg
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
               </svg>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition"
-              title="Facebook"
-            >
-              {/* Facebook icon */}
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
-                <path d="M13.5 9H16V6h-2.5C11.57 6 11 7.57 11 9v2H9v3h2v7h3v-7h2.14l.36-3H14v-2c0-.55.45-1 1-1Z" />
-              </svg>
-            </a>
-          </div>
-
-          {/* Email (edit to real address) */}
-          <div className="mt-4 text-sm">
-            <a href="mailto:hello@yourdomain.com" className="hover:underline">
-              hello@yourdomain.com
             </a>
           </div>
         </div>

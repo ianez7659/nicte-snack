@@ -51,7 +51,7 @@ export default function AboutHome({
 
         {/* Right: copy */}
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-green-700">
+          <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-[#597e53]">
             {title}
           </h3>
           <p className="mt-3 text-base md:text-lg text-gray-700">
@@ -73,14 +73,14 @@ export default function AboutHome({
             <Link
               href={aboutHref}
               aria-label="Go to About page"
-              className="inline-flex items-center justify-center rounded-full bg-green-700 px-6 py-3 text-white font-semibold hover:bg-green-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-full bg-[#597e53] px-6 py-3 text-white font-semibold hover:bg-green-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
             >
               Learn more
             </Link>
             <Link
               href={ingredientsHref}
               aria-label="Go to Ingredients page"
-              className="inline-flex items-center justify-center rounded-full border px-6 py-3 font-semibold hover:bg-gray-50"
+              className="inline-flex items-center justify-center rounded-full border border-[#597e53] px-6 py-3 font-semibold text-[#597e53] hover:bg-[#597e53] hover:text-white transition-colors duration-300"
             >
               Ingredients
             </Link>
