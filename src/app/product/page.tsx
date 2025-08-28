@@ -113,7 +113,7 @@ export default function ProductPage() {
                         give, adding that extra sweetness and detail to your
                         healthy seeds bar.We use high quality dried mango that
                         ensures the sweet taste, softness, and consistency that
-                        your mouth deserves. It's high in vitamins A, C,
+                        your mouth deserves. It is high in vitamins A, C,
                         antioxidants and fiber that support your immune system.
                       </p>
                     </section>
@@ -126,7 +126,7 @@ export default function ProductPage() {
                         One of the most relevant Japanese foods among Buddhist
                         monks and samurai warriors because of its calming yet
                         energizing properties, ideal for your morning diet. Let
-                        the incredible matcha's benefits and flavor drown while
+                        the incredible matchas benefits and flavor drown while
                         eating your healthy amaranth snack.
                       </p>
                     </section>

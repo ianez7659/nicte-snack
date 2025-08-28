@@ -50,22 +50,35 @@ export default function ProductPanel() {
           <div>
             <h3 className="font-bold text-lg text-[#762B3B] mb-2">History</h3>
             <p>
-              Over 8,000 years ago, amaranth was a core food of the Aztec and Mayan empires — treasured as much as gold, offered to the gods, and used to fuel warriors in battle. Today, this ancient grain continues its legacy as one of the most nutritious foods on Earth.
+              Over 8,000 years ago, amaranth was a core food of the Aztec and
+              Mayan empires — treasured as much as gold, offered to the gods,
+              and used to fuel warriors in battle. Today, this ancient grain
+              continues its legacy as one of the most nutritious foods on Earth.
             </p>
           </div>
-          
+
           <div>
-            <h3 className="font-bold text-lg text-[#762B3B] mb-2">Importance</h3>
+            <h3 className="font-bold text-lg text-[#762B3B] mb-2">
+              Importance
+            </h3>
             <p>
-              Celebrated as a superfood by experts worldwide — and even studied by NASA for its potential in space missions — amaranth is prized for its exceptional nutrition, versatility, and ability to grow in challenging climates. It's a bridge between ancient tradition and modern wellness.
+              Celebrated as a superfood by experts worldwide — and even studied
+              by NASA for its potential in space missions — amaranth is prized
+              for its exceptional nutrition, versatility, and ability to grow in
+              challenging climates. It is a bridge between ancient tradition and
+              modern wellness.
             </p>
           </div>
-          
+
           <div>
-            <h3 className="font-bold text-lg text-[#762B3B] mb-2">Health Benefits:</h3>
+            <h3 className="font-bold text-lg text-[#762B3B] mb-2">
+              Health Benefits:
+            </h3>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>Rich in high-quality protein and essential amino acids</li>
-              <li>Excellent source of calcium, iron, magnesium, and antioxidants</li>
+              <li>
+                Excellent source of calcium, iron, magnesium, and antioxidants
+              </li>
               <li>Naturally gluten-free and easy to digest</li>
               <li>Supports heart health</li>
               <li>Helps maintain strong muscles and bones</li>
